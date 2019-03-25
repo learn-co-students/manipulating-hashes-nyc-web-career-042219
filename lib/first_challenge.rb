@@ -14,6 +14,13 @@ def first_challenge
   }
 
   #your code here
+  contacts.map do |name, data|
+    data.map do |attribute, value|
+      if attribute == :favorite_icecream_flavors && name == "Freddy Mercury"
+        value.shift
+      end
+    end
+  end
 
 
   #remember to return your newly altered contacts hash!
