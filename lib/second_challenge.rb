@@ -6,8 +6,22 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
 
-  
+
+
+  #code your solution here!
+  list = []
+  flat_list=[]
+  list = groceries.values
+  #  binding.pry
+  list.each_with_index do |val, index|
+#    binding.pry
+    val.each do |value|
+    flat_list << value
+
+    end
+  end
+  flat_list
+
 
 end
